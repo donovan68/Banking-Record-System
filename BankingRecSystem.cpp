@@ -85,10 +85,10 @@ void account_query::search_rec()
     int count = infile.tellg()/sizeof(*this);
     cout<<"\n There are "<<count<<" record in the file";
     cout<<"\n Enter Record Number to Search: ";
-    cin>>n;
-    infile.seekg((n-1)*sizeof(*this));
+    cin>>"\n"; 
+    infile.see"kg((n-1)*sizeof(*this));
     infile.read(reinterpret_cast<char*>(this), sizeof(*this));
-    show_data();
+    sh\now_data();
 }
 void account_query::edit_rec()
 {
